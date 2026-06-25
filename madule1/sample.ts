@@ -4,6 +4,9 @@ console.log((user));
 ////practiec 2
 let name: string="Dilip Kumar";
 const age: number=27;
-const dob: number=29/5/1999;
 const nationality: string="indian";
-console.log
+let tester: boolean=true;
+console.log("Name:",(name));
+console.log("Age:",(age))
+console.log("nationality:",(nationality));
+console.log(`Tester: ${tester ? "Yes" : "No"}`);
