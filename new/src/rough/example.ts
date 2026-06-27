@@ -24,3 +24,24 @@ if (isRaining) {
  if(eligible>=26){console.log("you are eligible to vote.")}
  else if(eligible>=32){console.log("you are not eligible to vote.")}
  else{console.log("None of the above");}
+
+ //switch statement:
+ let department: number = 5;
+switch (department) {
+ case 1:
+ console.log("department:","HR");
+ break;
+ case 2:
+ console.log("department:","admin");
+ break;
+ case 3:
+ console.log("department:","vault");
+ break;
+case 4:
+ console.log("department:","pantry");
+ break;
+case 5:
+ console.log("department:","playing area");
+ break;
+ default:
+ console.log("department:","entrance!");}
