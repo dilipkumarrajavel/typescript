@@ -19,3 +19,8 @@ if (isRaining) {
  else if(marks>=75) {console.log("rank2");}
  else if(marks>=47) {console.log("rank3");}
  else{console.log("fail");}
+
+ let eligible:number=25;
+ if(eligible>=26){console.log("you are eligible to vote.")}
+ else if(eligible>=32){console.log("you are not eligible to vote.")}
+ else{console.log("None of the above");}
