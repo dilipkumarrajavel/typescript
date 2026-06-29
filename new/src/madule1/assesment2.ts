@@ -283,4 +283,65 @@ console.log("Interview Passed");
 const empName: string = "Alex";
 const monthlyTarget: number = 60000;
 
-console.log(empName);
+const monthlySales: number[] = [12000, 9000, 18000, 7000, 15000, 11000];
+
+let totalSales: number = 0;
+let incentive: number = 0;
+let penalty: number = 0;
+let highSaleDays: number = 0;
+let bestSales: number = 0;
+let commission: number = 0;
+
+console.log("Employee Name :", empName);
+console.log("---------------------------------------");
+
+for (let day = 0; day < monthlySales.length; day++) {
+    const dailySales = monthlySales[day] ?? 0;
+    console.log("Daily Sales :", dailySales);
+
+    totalSales = totalSales + dailySales;
+
+    console.log("Total Sales :", totalSales);
+
+    console.log("Day :", day + 1);
+    console.log("Sales :", monthlySales[day]);
+
+    if (dailySales > bestSales) {
+        bestSales = dailySales;
+    }
+
+    if (dailySales >= 20000) {
+        console.log("Excellent Sales");
+    } else if (dailySales >= 15000) {
+        console.log("Good Sales");
+    } else {
+        console.log("Below Target Sales");
+    }
+    console.log("--------------------------------------");
+}
+commission = totalSales * 0.07;
+
+const averageSales = totalSales / monthlySales.length;
+
+const finalSalary = commission + incentive - penalty;
+
+console.log("Total Sales :", totalSales);
+console.log("Average Sales :", averageSales);
+console.log("Highest Sales :", bestSales);
+console.log("High Sales Days :", highSaleDays);
+console.log("Incentive :", incentive);
+console.log("Penalty :", penalty);
+console.log("Commission :", commission);
+
+if (totalSales >= monthlyTarget && highSaleDays >= 4 && bestSales >= 20000) {
+    console.log("Employee Rating : Outstanding");
+} else if (totalSales >= monthlyTarget && highSaleDays >= 2 && bestSales >= 15000) {
+    console.log("Employee Rating : Excellent");
+} else {
+    console.log("Employee Rating : Needs Improvement");
+
+}
+
+console.log("Final Salary :", finalSalary);
+
+console.log("Assessment Completed");
