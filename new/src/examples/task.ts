@@ -37,9 +37,9 @@ average = average + 2;
 console.log("Updated Average :", average);
 
 if (average >=90) {
-    console.log("Status:",("Outstanding Performance"));
+    console.log("Status:Outstanding Performance");
 } else {
-    console.log("Status:",("Good Performance"));
+    console.log("Status:Good Performance");
 }
 
 console.log("Status:",("Assessment Completed"));
@@ -279,3 +279,8 @@ if (
 
 // BUG 7: Incorrect final message
 console.log("Interview Passed");
+
+const empName: string = "Alex";
+const monthlyTarget: number = 60000;
+
+console.log(empName);
