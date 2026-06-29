@@ -37,12 +37,12 @@ average = average + 2;
 console.log("Updated Average :", average);
 
 if (average >=90) {
-    console.log("Outstanding Performance");
+    console.log("Status:",("Outstanding Performance"));
 } else {
-    console.log("Good Performance");
+    console.log("Status:",("Good Performance"));
 }
 
-console.log("Assessment Completed");
+console.log("Status:",("Assessment Completed"));
 
 let employeeName: string = "Alex";
 let employeeId: number = 1001;
