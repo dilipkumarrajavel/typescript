@@ -11,7 +11,7 @@ if (isRaining) {
 //example:
  let issunday: boolean = false;
  if(issunday) {console.log("play cricket");
- } else{console.log("Noooo");}
+ } else{console.log("Noooo");} 
  
  //if, else if, else statement:
  let marks: number=30;
